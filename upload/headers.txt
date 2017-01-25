@@ -1,0 +1,16 @@
+HTTP/1.1 302 Found
+Date: Fri, 22 Jul 2011 10:02:40 GMT
+Server: Apache/2
+X-Powered-By: PHP/5.2.13
+Set-Cookie: PHPSESSID=029ba3956aa3677c65e3492f0b95bbe6; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: uid=19317868478562972528431105508319; expires=Mon, 16-Jul-2012 10:02:40 GMT
+Set-Cookie: uid=34103788564193919103515561654747; expires=Mon, 16-Jul-2012 10:02:40 GMT
+location: /?send=resuts#results
+Vary: Accept-Encoding,User-Agent
+Content-Length: 0
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
