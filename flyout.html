@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" type="text/css" href="flyout.css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="locale.js"></script>
+	<script type="text/javascript" src="localize.js"></script>
+</head>
+
+<body id="flyout" class="undocked">
+	<script type="text/javascript">
+	document.body.className = System.Gadget.document.body.className;
+    
+//System.Shell.execute(System.Gadget.path + "\\MyFile.txt");
+//System.Shell.execute("Notepad.exe", "MyFile.Txt", "C:\\Users\\MyName\\", "open");    
+    
+    function CapturePath(value) {
+     document.getElementById("file2").value = value;
+    }
+    
+    function goUpload(_file, _size){
+      //alert(System.Gadget.path + "\\upload.exe"); //"-u -f " + _file + " -t " + _size
+      //System.Shell.execute('start /min ' + System.Gadget.path + "\\upload.exe", "-u -f " + _file + " -t " + _size, "", "open");    
+      
+        var WshShell = new ActiveXObject("WScript.Shell");
+        WshShell.Run("\""+System.Gadget.path + "\\upload.exe\" -u -f \"" + _file + "\" -t " + _size,0, false);      
+      
+      }
+    
+	</script>
+	<div id="content" style="align:center;" >
+<fieldset style="width: 200px;"> <legend><a href="http://bitbest.ru/"><img src="http://bitbest.ru/banner/88_31_cl.png" alt="Национальный хостинг картинок" border="0"/></a></legend>
+<form name= "form" action="http://bitbest.ru/index.php" enctype="multipart/form-data" method="post" target="_blank">
+<center>
+<input class="input1" id="file1" name="file1" size="18" style="font-size: 8pt;" type="file" onchange="CapturePath(this.value);" /><br />
+<input class="input1" id="file2" name="file2" type="hidden" />
+Превью: <input id="thumb-size" maxlength="3" name="thumb_size" size="1" style="font-size: 8pt;" type="text" value="170" />
+px <input id="send_hidden" name="send" type="hidden" value="1" /><br />
+<input onclick="goUpload(form.file2.value, form.thumb_size.value);" id="uploadButton" name="submit" style="font-size: 8pt;" type="button" value="Загрузить" /></center> </form>
+</fieldset> 
+	<div>
+</body>
+</html>

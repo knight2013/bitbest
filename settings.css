@@ -1,0 +1,42 @@
+﻿* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font: normal 14px/16px Segoe UI, Arial;
+	width:200px;
+	height:225px;
+}
+
+#backgroundOpacity {
+	width:190px;
+}
+
+#showImages {
+	margin:10px 5px 0 -2px;
+}
+
+#backgroundMode {
+	width:195px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+small {
+	font-size:11px;
+}
+
+.error small {
+	color:red;
+}
+
+.error input {
+	border:2px solid red;
+}
+
+#about {
+	margin-top:45px;
+}

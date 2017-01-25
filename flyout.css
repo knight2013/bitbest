@@ -1,0 +1,67 @@
+﻿* {
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+}
+
+body {
+	width:350px;
+	height:240px;
+    color: white;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: "Segoe UI", Calibri, Tahoma, sans-serif;
+	background: transparent url('images/undockedFlyoutBg.png') no-repeat;
+}
+
+body.docked {
+	background: transparent url('images/dockedFlyoutBg.png') no-repeat;
+	width:300px;
+	height:145px;
+}
+
+a {
+	color: white;
+}
+
+.docked #content {
+	margin:5px 10px;
+}
+
+.docked #header {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+	height:18px;
+	overflow: hidden;
+	margin-bottom:5px;
+}
+
+.docked #description {
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+	height:108px;
+	overflow: hidden;
+}
+.undocked #content {
+	margin:25px 30px;
+} 
+.undocked #header {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	color: white;
+	height:20px;
+	overflow: hidden;
+	margin-bottom:15px;
+}
+
+.undocked #description {
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+	height:144px;
+	overflow: hidden;
+}

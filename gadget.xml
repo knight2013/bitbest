@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+    <name>Example Gadget</name>
+    <version>1.0</version>
+    <author name="knight">
+        <info url="soaproject.hut.ru" />
+    </author>
+    <copyright>2009</copyright>
+    <description>Gadget for Windows Sidebar</description>
+    <icons>
+		<!-- Иконка гаджета -->
+		<!-- http://www.iconarchive.com/show/tulliana-2-icons-by-umut-pulat/ksim-cpu-icon.html -->
+        <icon width="128" height="128" src="icon.png" />
+    </icons>
+    <hosts>
+        <host name="sidebar">
+			<!-- имя и тип стартового файла гаджета -->
+            <base type="HTML" apiVersion="1.0.0" src="main.html" />
+			
+            <permissions>full</permissions>
+            <platform minPlatformVersion="0.3" />
+			
+			<!-- Изображение видимое при перетаскивании гаджета на сайдбар -->
+			<defaultImage src="images/dockedBg.png" />
+        </host>
+    </hosts>
+</gadget>

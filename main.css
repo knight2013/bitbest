@@ -1,0 +1,51 @@
+﻿* {
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+}
+
+body {
+    /* параметры width, height и background
+	   нужно зачавать в функции dockStateChanged,
+	   вызываемой событиями System.Gadget.onDock
+	   и System.Gadget.onUndock */
+	   
+    color: white;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: "Segoe UI", Calibri, Tahoma, sans-serif;
+}
+
+a {
+	color: white;
+}
+
+#icons, #thumbnail {
+	margin: 10px 0;
+}
+
+#gadgetContent {
+	margin: 25px;
+}
+
+.docked #gadgetContent {
+	margin: 5px 10px;
+}
+
+#systemData{
+	text-align:right;
+	position: absolute;
+	font-size:40px;
+	line-height:1.1em;
+	top: 125px;
+	right: 30px;
+}
+
+.docked #systemData{
+	text-align:right;
+	position: absolute;
+	font-size:25px;
+	line-height:1.1em;
+	top: 80px;
+	right: 10px;
+}
